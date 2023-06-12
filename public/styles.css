@@ -1,0 +1,41 @@
+body {
+  margin: 0 20%;
+  background-color: #0055b0;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+}
+
+Heading h1 {
+  margin: 7rem 0 2rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: Roboto;
+  color: #11009e;
+}
+
+main {
+  padding-top: 4rem;
+  color: white;
+}
+
+.row-1 {
+  margin: 3rem 0 0;
+
+  color: white;
+}
+
+.form-row {
+  padding: 5% 10%;
+}
+
+@media (max-width: 768px) {
+  Heading h1 {
+    font-size: 3rem;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+  body {
+    margin: 0 10%;
+  }
+}

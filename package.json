@@ -1,0 +1,21 @@
+{
+  "name": "snapurl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.3",
+    "nanoid": "^3.1.16",
+    "path": "^0.12.7",
+    "valid-url": "^1.0.9"
+  }
+}
