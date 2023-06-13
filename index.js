@@ -36,8 +36,8 @@ app.post("/submit", async (req, res) => {
     let randomValue = nanoid(4);
     const link = req.body.url;
     if (!validUrl.isUri(link)) {
-      res.send("Invalid URL");
       randomValue="Invalid input";
+      res.send({randomValue});
       return;
     }
     newUrl = new Url({
