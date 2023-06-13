@@ -33,11 +33,13 @@ const Url = mongoose.model("Url", urlSchema);
 
 app.post("/submit", async (req, res) => {
   try {
+    let randomValue = nanoid(4);
     const link = req.body.url;
     if (!validUrl.isUri(link)) {
       res.send("Invalid URL");
+      randomValue="Invalid input";
+      return;
     }
-    let randomValue = nanoid(4);
     newUrl = new Url({
       url: link,
       code: randomValue,
