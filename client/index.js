@@ -13,7 +13,7 @@ button2.addEventListener("click", function () {
 });
 
 const createShortUrl = async (url) => {
-  const response = await fetch(`http://localhost:3000/submit`, {
+  const response = await fetch(`https://snapurl-vtxw.onrender.com/submit`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -27,7 +27,7 @@ const createShortUrl = async (url) => {
 };
 
 const getAnalytics = async (shorturl) => {
-  const response = await fetch(`http://localhost:3000/analyticssubmit`, {
+  const response = await fetch(`https://snapurl-vtxw.onrender.com/analyticssubmit`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
